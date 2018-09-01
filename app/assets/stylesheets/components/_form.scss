@@ -1,0 +1,51 @@
+.form {
+  background-color: transparent;
+  color: $white;
+  max-width: 366px;
+  max-height: 570px;
+}
+
+.form__content {
+  input, select {
+    margin-top: 45px;
+  }
+}
+
+.form_text {
+  font-size: 20px;
+}
+
+.form__title {
+  padding: 24px 0px;
+  background-color: $black;
+  text-align: center;
+}
+
+.form__submit {
+  background-color: $accent-blue;
+  width: 100%;
+  padding: 11px;
+  margin-top: 45px;
+  opacity: 0.8;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.form__links {
+  font-size: 14px;
+  margin-top: 15px;
+
+  a {
+    color: $accent-blue;
+    opacity: 0.6;
+    &:hover {
+      color: $accent-blue;
+      opacity: 1;
+    }
+  }
+}
+
+.form-group {
+  margin: 0px
+}
