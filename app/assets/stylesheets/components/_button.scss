@@ -1,0 +1,31 @@
+.btn_tmp{
+  color: $smoke;
+  padding: 11px 60px;
+  border-radius: 23px;
+  border: 1px solid $smoke;
+  opacity: .9;
+  transition: background 0.3s ease;
+
+  &:hover {
+    opacity: 1;
+    color: $gunmetal;
+    background-color: $smoke;
+    text-decoration: none;
+  }
+}
+
+.btn_home{
+  color: $gunmetal;
+  padding: 20px 60px;
+  background-color: $smoke;
+  transition: background 0.3s ease;
+  font-weight: bold;
+
+
+  &:hover {
+    opacity: 1;
+    color: $smoke;
+    background-color: $pastel-pink;
+    text-decoration: none;
+  }
+}

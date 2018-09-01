@@ -1,0 +1,38 @@
+#sidebar {
+  position: fixed;
+  width: 335px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: white;
+}
+
+ul {
+  list-style: none;
+  margin-top: 240px;
+  margin-left: 120px;
+  color: $gunmetal;
+  font-weight: bold;
+  font-size: 20px
+}
+
+li {
+  line-height: 5;
+}
+
+li:active {
+  text-decoration: none;
+  color: red;
+}
+
+a {
+  text-decoration: none;
+  color: $gunmetal
+}
+
+a:hover {
+  color: $pastel-pink;
+  text-decoration: line-through;
+}
+
+
