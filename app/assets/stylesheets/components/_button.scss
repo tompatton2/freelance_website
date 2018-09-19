@@ -1,6 +1,6 @@
-.btn_tmp{
+.btn_transparent_white{
   color: $smoke;
-  padding: 11px 60px;
+  padding: 1vw 7vw;
   border-radius: 23px;
   border: 1px solid $smoke;
   opacity: .9;
@@ -14,9 +14,9 @@
   }
 }
 
-.btn_home{
+.btn_block_white{
   color: $gunmetal;
-  padding: 20px 60px;
+  padding: 2vw 5vw;
   background-color: $smoke;
   transition: background 0.3s ease;
   font-weight: bold;
@@ -25,7 +25,7 @@
   &:hover {
     opacity: 1;
     color: $smoke;
-    background-color: $pastel-pink;
+    background-color: $sea;
     text-decoration: none;
   }
 }
