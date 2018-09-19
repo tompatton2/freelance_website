@@ -1,21 +1,23 @@
-// // Specific CSS for your home-page
+//GLOBAL
 
-// //GLOBAL
+.page_container {
+  margin-left: 250px;
+}
 
-// // LANDING
-// // #######################################################################
-// // #######################################################################
-// // #######################################################################
+// LANDING
+// #######################################################################
+// #######################################################################
+// #######################################################################
 
 #home {
   color: $gunmetal;
+  min-height: 110vh;
 }
 
 .home__text {
   padding: 5vw;
   text-align: left;
   margin-top: 0px;
-  margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 10px;
 }
@@ -24,7 +26,6 @@
   background-color: #F4F4F4;
   font-size: 5vw;
   max-width: 600px;
-  // max-width: 50%;
   font-weight: bold;
   padding: 15px 15px;
   margin-bottom: 10px;
@@ -46,18 +47,20 @@
     }
 }
 
-// .home__button {
-//   margin-top: 20px;
-// }
  // WHO I AM
 // #######################################################################
 // #######################################################################
 // #######################################################################
+
 #who_i_am {
   color: $smoke;
   background-color: $sea;
   font-weight: lighter;
   padding: 5vw;
+  min-height: 99vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .who_i_am__title {
@@ -68,13 +71,11 @@
 }
 
 .who_i_am__para {
-  // font-size: 70px;
-  font-size: 5vw;
-  // margin-bottom: 40px;
+  font-size: 3.5vw;
 }
 
 .who_i_am__links {
-  // margin-top: 50px;
+  margin-top: 30px;
   font-size: 1.5vw;
 }
 
@@ -94,45 +95,41 @@
 // #######################################################################
 
 #what_i_do {
-  // margin-left: 135px;
-  padding: 100px 0px;
+  padding: 5.5vw;
+  min-height: 80vh;
   background-color: $smoke;
   font-color: $gunmetal;
-  // height: 99vh;
 }
 
-// .what_i_do__container {
-//   display: flex;
-//   margin-left: 68px;
-//   font-weight: lighter;
-//   align-items: center;
-// }
+.what_i_do_container {
+   display: flex;
+   justify-content: space-between;
+}
 
 .what_i_do__title {
-  // margin-left: 135px;
-  font-size: 80px;
+  padding-bottom: 3vw;
+  font-size: 6vw;
   margin-bottom: 40px;
 }
 
 .what_i_do__element {
-  padding: 15px 15px;
-
+  padding-right: 36px;
+  max-width: 23vw;
 }
 
 .what_i_do__icon {
-  // margin-bottom: 70px;
+  margin-bottom: 3vw;
+  height: 3vw;
+  width: 3vw;
 }
 
 .what_i_do__header {
-  font-size: 30px;
-  // margin-bottom: 15px;
-
+  font-size: 3vw;
 }
 
 .what_i_do__text {
-  // margin-bottom: 15px;
   line-height: 3.0;
-  font-size: 20px;
+  font-size: 1.5vw;
 }
 
 // My Work
@@ -141,22 +138,19 @@
 // #######################################################################
 
 #my_work {
-  // margin-left: 135px;
-  padding: 143px 0px;
-  color: $gunmetal;
+  padding: 5.5vw;
+  min-height: 80vh;
   background-color: $pastel-pink;
-  height: 99vh;
+  font-color: $gunmetal;
 }
 
 .my_work__title {
-  // margin-left: 135px;
-  font-size: 80px;
+  padding-bottom: 3vw;
+  font-size: 6vw;
+  margin-bottom: 40px;
 }
 
 .my_work__container {
-  // margin-left: 68px;
-  // padding-right: 140px;
-  // max-width: 1500px;
   font-weight: lighter;
 }
 
@@ -170,22 +164,20 @@
 // #######################################################################
 
 #contact {
-  // margin-left: 135px;
-  padding: 143px 0px;
+  padding: 5.5vw;
+  min-height: 105vh;
   color: $smoke;
   background-color: $gunmetal;
-  height: 100vh;
 }
 
 .contact__title {
-  // margin-left: 135px;
-  font-size: 80px;
+  padding-bottom: 3vw;
+  font-size: 6vw;
+  margin-bottom: 40px;
 }
 
 .contact__container {
-  // margin-left: 68px;
   padding-right: 140px;
-  // max-width: 1500px;
   font-weight: lighter;
 }
 
@@ -194,7 +186,6 @@
 }
 
 .contact__form {
-  height: 700px;
 }
 
 .contact__links {

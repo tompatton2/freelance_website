@@ -1,94 +1,92 @@
-<div class="banner" style="background-image: url(https://images.unsplash.com/photo-1530153739137-cafe11da39aa?ixlib=rb-0.3.5&s=a459e3b752a24e4401f35b4251f88289&auto=format&fit=crop&w=2734&q=80)">
-  <div id="home">
-    <div class="home__text">
-      <div class="home__name">
-        <p>I'm Tom Patton.</p>
-      </div>
-      <div class="home__sub">
-        <p>Business strategest, web designer, and developer in New York City working with businesses, entrepeneurs and freelancers.</p>
-      </div>
-      <div class="home__button">
-        <a class='btn_home' href="#contact">Say Hello!</a>
-      </div>
+<div class="hidden-xs">
+  <div class="page_container">
+
+    <div id="sidebar">
+      <ul>
+        <%= image_tag "tmp_logo_side", class: "sidebar_logo" %>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#who_i_am">About me</a></li>
+        <li><a href="#what_i_do">What I do</a></li>
+        <li><a href="#my_work">My work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </div>
-  </div>
-</div>
 
-
-<div id="who_i_am">
-  <h1 class="who_i_am__title">Hello.</h1>
-  <div class="who_i_am__para">
-    <p>I’m a business strategy professional turned web designer and developer. I can help you market, design, and launch your freelance website, blog, or startup MVP. </p>
-  </div>
-  <div class="who_i_am__links">
-    <a class="who_i_am__link"href="#contact">CONTACT</a>
-    <a class="who_i_am__link"href="">LINKEDIN</a>
-    <a class="who_i_am__link" href="">GITHUB</a>
-    <a class="who_i_am__link"href="">SKETCH</a>
-  </div>
-</div>
-
-
-  <div id="what_i_do">
-<div class="container">
-    <h1 class="what_i_do__title">What I do</h1>
-      <div class="col-lg-4 col-md-4 col-sm-4">
-        <div class="what_i_do__element">
-          <p class="what_i_do__icon">ICON</p>
-          <p class="what_i_do__header">BUSINESS</p>
-          <p class="what_i_do__text">Lorem ipsum dolor sit amet, te velit iriure has. Vix quem feugiat id. At oblique accusata prodesset vis, eam ad latine vivendum.</p>
-        </div>
-    </div>
-      <div class="col-lg-4 col-md-4 col-sm-4">
-        <div class="what_i_do__element">
-          <p class="what_i_do__icon">ICON</p>
-          <p class="what_i_do__header">WEB DESIGN</p>
-          <p class="what_i_do__text">Lorem ipsum dolor sit amet, te velit iriure has. Vix quem feugiat id. At oblique accusata prodesset vis, eam ad latine vivendum.</p>
-        </div>
-    </div>
-      <div class="col-lg-4 col-md-4 col-sm-4">
-        <div class="what_i_do__element">
-          <p class="what_i_do__icon">ICON</p>
-          <p class="what_i_do__header">WEB DEVELOPMENT</p>
-          <p class="what_i_do__text">Lorem ipsum dolor sit amet, te velit iriure has. Vix quem feugiat id. At oblique accusata prodesset vis, eam ad latine vivendum.</p>
+    <div class="page__content">
+      <div class="banner" style="background-image: url(https://images.unsplash.com/photo-1527513167268-961466388f0d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=67b2e5763d354a51405640067ae6a2c2&auto=format&fit=crop&w=2848&q=80)">
+        <div id="home">
+          <div class="home__text">
+            <div class="home__name">
+              <p>I'm Tom Patton.</p>
+            </div>
+            <div class="home__sub">
+              <p>Business strategest, web designer, and developer in New York City working with businesses, entrepeneurs and freelancers.</p>
+            </div>
+            <div class="home__button">
+              <a class='btn_block_white' href="#contact">Say Hello!</a>
+            </div>
+          </div>
         </div>
       </div>
+
+      <div id="who_i_am">
+        <h1 class="who_i_am__title">Hello.</h1>
+        <div class="who_i_am__para">
+          <p>I’m a business strategy professional turned web designer and developer. I can help you market, design, and launch your freelance website, blog, or startup MVP. </p>
+        </div>
+        <div class="who_i_am__links">
+          <a class="who_i_am__link"href="#contact">CONTACT</a>
+          <a class="who_i_am__link"href="">LINKEDIN</a>
+          <a class="who_i_am__link" href="">GITHUB</a>
+          <a class="who_i_am__link"href="">SKETCH</a>
+        </div>
+      </div>
+
+      <div id="what_i_do">
+        <h1 class="what_i_do__title">What I do</h1>
+        <div class="what_i_do_container">
+          <div class="what_i_do__element">
+            <%= image_tag "suitcase.svg", class: "what_i_do__icon" %>
+            <p class="what_i_do__header">BUSINESS</p>
+            <p class="what_i_do__text">My background is in business strategy and management. I've worked with Cisco, Google, and HotelTonight. </p>
+          </div>
+          <div class="what_i_do__element">
+            <%= image_tag "pencil.svg", class: "what_i_do__icon" %>
+            <p class="what_i_do__header">DESIGN</p>
+            <p class="what_i_do__text">I come from a family of architects and artists. Design is my hobby and passion.</p>
+          </div>
+          <div class="what_i_do__element">
+            <%= image_tag "html.svg", class: "what_i_do__icon" %>
+            <p class="what_i_do__header">DEVELOPMENT</p>
+            <p class="what_i_do__text">Lorem ipsum dolor sit amet, te velit iriure has. Vix quem feugiat id. At oblique accusata prodesset vis, eam ad latine vivendum.</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="my_work">
+        <h1 class="my_work__title">The things I've made</h1>
+        <div class="my_work__container">
+          <a href="#home">
+            <%= image_tag "swapp.svg", class: "carousel_image" %>
+          </a>
+        </div>
+      </div>
+
+      <div id="contact">
+        <h1 class="contact__title">Let's build together.</h1>
+        <div class="contact__container">
+          <div class="contact__form">
+          </div>
+          <div class="contact__button">
+            <a class='btn_transparent_white' href="">Contact Tom</a>
+          </div>
+          <div class="contact__links">
+            <a class="contact__link"href="">LINKEDIN</a>
+            <a class="contact__link" href="">GITHUB</a>
+            <a class="contact__link"href="">SKETCH</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
-
-<div id="my_work">
-  <h1 class="my_work__title">My work</h1>
-  <div class="my_work__container">
-  </div>
-</div>
-
-<div id="contact">
-  <h1 class="contact__title">Let's build together.</h1>
-  <div class="contact__container">
-    <div class="contact__form">
-    </div>
-    <div class="contact__button">
-      <a class='btn_tmp' href="">Contact Tom</a>
-    </div>
-    <div class="contact__links">
-      <a class="contact__link"href="">LINKEDIN</a>
-      <a class="contact__link" href="">GITHUB</a>
-      <a class="contact__link"href="">SKETCH</a>
-    </div>
-  </div>
-</div>
-
-
-
-
-<div id="sidebar">
-  <ul>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#who_i_am">About me</a></li>
-    <li><a href="#what_i_do">What I do</a></li>
-    <li><a href="#my_work">My work</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</div>
-
-
