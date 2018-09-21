@@ -13,7 +13,7 @@
     </div>
 
     <div class="page__content">
-      <div class="banner" style="background-image: url(https://images.unsplash.com/photo-1527513167268-961466388f0d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=67b2e5763d354a51405640067ae6a2c2&auto=format&fit=crop&w=2848&q=80)">
+      <div class="banner" style="background-image: url(https://images.unsplash.com/photo-1536411396596-afed9fa3c1b2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8c6205c79dea41101f41fd4513584573&auto=format&fit=crop&w=1951&q=80)">
         <div id="home">
           <div class="home__text">
             <div class="home__name">
@@ -36,9 +36,9 @@
         </div>
         <div class="who_i_am__links">
           <a class="who_i_am__link"href="#contact">CONTACT</a>
-          <a class="who_i_am__link"href="">LINKEDIN</a>
-          <a class="who_i_am__link" href="">GITHUB</a>
-          <a class="who_i_am__link"href="">SKETCH</a>
+          <a class="who_i_am__link"href="https://www.linkedin.com/in/tom-patton">LINKEDIN</a>
+          <a class="who_i_am__link" href="https://github.com/tompatton2">GITHUB</a>
+          <!-- <a class="who_i_am__link"href="">SKETCH</a> -->
         </div>
       </div>
 
@@ -76,14 +76,24 @@
         <h1 class="contact__title">Let's build together.</h1>
         <div class="contact__container">
           <div class="contact__form">
-          </div>
-          <div class="contact__button">
-            <a class='btn_transparent_white' href="">Contact Tom</a>
+            <div class="form">
+              <%= form_for @inbound do |c| %>
+              <div class="form__content">
+                <%= c.label :name, "Name" %>
+                <%= c.text_field :name %>
+                <%= c.label :email, "Email" %>
+                <%= c.text_field :email %>
+                <%= c.label :message, "Message" %>
+                <%= c.text_field :message, :class => 'form__message' %>
+              </div>
+                <%= c.submit 'Contact Tom', :class => 'btn_transparent_white'%>
+              <% end %>
+            </div>
           </div>
           <div class="contact__links">
-            <a class="contact__link"href="">LINKEDIN</a>
-            <a class="contact__link" href="">GITHUB</a>
-            <a class="contact__link"href="">SKETCH</a>
+            <a class="contact__link"href="https://www.linkedin.com/in/tom-patton">LINKEDIN</a>
+            <a class="contact__link" href="https://github.com/tompatton2">GITHUB</a>
+            <!-- <a class="contact__link"href="">SKETCH</a> -->
           </div>
         </div>
       </div>
