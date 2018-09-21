@@ -1,28 +1,38 @@
 .form {
   background-color: transparent;
-  color: $white;
+  color: white;
   max-width: 366px;
   max-height: 570px;
 }
 
 .form__content {
-  input, select {
-    margin-top: 45px;
-  }
+  display: flex;
+  flex-direction: column;
+    input, select {
+    margin-bottom: 18px;
+    margin-top: 5px;
+    font-weight: lighter;
+    color: black;
+    }
+
+    label {
+      font-weight: lighter;
+      font-size: 15px;
+    }
+
+    .form__message {
+        padding: 40px;
+        margin-bottom: 50px;
+    }
 }
 
 .form_text {
+  color: black;
   font-size: 20px;
 }
 
-.form__title {
-  padding: 24px 0px;
-  background-color: $black;
-  text-align: center;
-}
-
 .form__submit {
-  background-color: $accent-blue;
+  background-color: $sea;
   width: 100%;
   padding: 11px;
   margin-top: 45px;
@@ -37,10 +47,10 @@
   margin-top: 15px;
 
   a {
-    color: $accent-blue;
+    color: $sea;
     opacity: 0.6;
     &:hover {
-      color: $accent-blue;
+      color: $sea;
       opacity: 1;
     }
   }
