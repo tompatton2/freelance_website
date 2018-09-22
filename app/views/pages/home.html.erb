@@ -9,11 +9,11 @@
       </div>
       <ul>
         <%= image_tag "tmp_logo_side", class: "sidebar_logo" %>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#who_i_am">About me</a></li>
-        <li><a href="#what_i_do">What I do</a></li>
-        <li><a href="#my_work">My work</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li id="hme"><a href="#home">Home</a></li>
+        <li id="wia"><a href="#who_i_am">About me</a></li>
+        <li id="wid"><a href="#what_i_do">What I do</a></li>
+        <li id="mw"><a href="#my_work">My work</a></li>
+        <li id="ct"><a href="#contact">Contact</a></li>
       </ul>
     </div>
   </div>
@@ -217,7 +217,7 @@
               <%= c.label :email, "Email" %>
               <%= c.text_field :email %>
               <%= c.label :message, "Message" %>
-              <%= c.text_field :message, :class => 'form__message' %>
+              <%= c.text_area :message, :class => 'form__message' %>
             </div>
             <%= c.submit 'Contact Tom', :class => 'btn_transparent_white'%>
             <% end %>
