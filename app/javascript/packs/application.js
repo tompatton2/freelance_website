@@ -1,4 +1,4 @@
 import "bootstrap";
 
-import { windowScroller } from '../components/homepage';
-windowScroller();
+import { ctaScroller } from '../components/homepage';
+ctaScroller();

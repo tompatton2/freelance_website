@@ -2,6 +2,11 @@
   <!-- Sidebar Naviagation -->
   <div class="hidden-xs">
     <div id="sidebar">
+      <div class="scroll-downs">
+        <div class="mousey">
+          <div class="scroller"></div>
+        </div>
+      </div>
       <ul>
         <%= image_tag "tmp_logo_side", class: "sidebar_logo" %>
         <li><a href="#home">Home</a></li>
@@ -82,13 +87,22 @@
       </div>
     </div>
   </div>
-
-  <div id="mobile_my_work">
-    <h1 class="my_work__title">The things I've made</h1>
-    <div class="my_work__container">
-      <a href="#home">
-        <%= image_tag "swapp.svg", class: "carousel_image" %>
-      </a>
+  <div class="my_work__background">
+    <div id="mobile_my_work">
+      <h1 class="my_work__title">The things I've made</h1>
+      <div class="my_work__container">
+        <div class="my_work__header">
+          <p>WEB APPS</p>
+        </div>
+        <div class="my_work__item">
+          <a href="#home">
+            <%= image_tag "swapp_black.svg", class: "carousel_image" %>
+          </a>
+        </div>
+        <a href="#home">
+          <%= image_tag "pupp_black.svg", class: "carousel_image" %>
+        </a>
+      </div>
     </div>
   </div>
 
@@ -133,7 +147,7 @@
             <p>Business strategest, web designer, and developer in New York City working with businesses, entrepeneurs and freelancers.</p>
           </div>
           <div class="home__button">
-            <a class='btn_block_white' href="#contact">Say Hello!</a>
+            <a id="cta" class='btn_block_white' href="#contact">Say Hello!</a>
           </div>
         </div>
       </div>
@@ -172,18 +186,27 @@
         </div>
       </div>
     </div>
-
-    <div id="my_work">
-      <h1 class="my_work__title">The things I've made</h1>
-      <div class="my_work__container">
-        <a href="#home">
-          <%= image_tag "swapp.svg", class: "carousel_image" %>
-        </a>
+    <div class="my_work__background">
+      <div id="my_work">
+        <h1 class="my_work__title">The things I've made</h1>
+        <div class="my_work__container">
+          <div class="my_work__header">
+            <p>WEB APPS</p>
+          </div>
+          <div class="my_work__item">
+            <a href="#home">
+              <%= image_tag "swapp_black.svg", class: "carousel_image" %>
+            </a>
+          </div>
+          <a href="#home">
+            <%= image_tag "pupp_black.svg", class: "carousel_image" %>
+          </a>
+        </div>
       </div>
     </div>
 
     <div id="contact">
-      <h1 class="mobile_contact__title">Let's build together.</h1>
+      <h1 class="contact__title">Let's build together.</h1>
       <div class="contact__container">
         <div class="contact__form">
           <div class="form">
@@ -203,7 +226,7 @@
         <div class="contact__links">
           <a class="contact__link"href="https://www.linkedin.com/in/tom-patton">LINKEDIN</a>
           <a class="contact__link" href="https://github.com/tompatton2">GITHUB</a>
-          <!-- <a class="contact__link"href="">SKETCH</a> -->
+          <a class="contact__link"href="mailto:tom.patton22@gmail.com">EMAIL</a>
         </div>
       </div>
     </div>
