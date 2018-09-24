@@ -49,7 +49,7 @@
         <div class="mobile_home__sub">
           <p>Business strategest, web designer, and developer in New York City working with businesses, entrepeneurs and freelancers.</p>
         </div>
-        <a class='btn_block_white' href="#mobile_contact">Say Hello!</a>
+        <a class='btn_block_white' href="#mobile_contact">SAY HELLO!</a>
       </div>
     </div>
   </div>
@@ -141,13 +141,13 @@
       <div id="home">
         <div class="home__text">
           <div class="home__name">
-            <p>I'm Tom Patton.</p>
+            <p>My name's Tom Patton.</p>
           </div>
           <div class="home__sub">
-            <p>Business strategest, web designer, and developer in New York City working with businesses, entrepeneurs and freelancers.</p>
+            <p>Aspiring Product Manager, web designer, and developer in New York City working with businesses, entrepeneurs and freelancers.</p>
           </div>
           <div class="home__button">
-            <a id="cta" class='btn_block_white' href="#contact">Say Hello!</a>
+            <a id="cta" class='btn_block_white' href="#contact">SAY HELLO.</a>
           </div>
         </div>
       </div>
@@ -167,7 +167,7 @@
     </div>
 
     <div id="what_i_do">
-      <h1 class="what_i_do__title">What I do</h1>
+      <h1 class="what_i_do__title">What I can do for you</h1>
       <div class="what_i_do_container">
         <div class="what_i_do__element">
           <%= image_tag "suitcase.svg", class: "what_i_do__icon" %>
@@ -188,17 +188,19 @@
     </div>
     <div class="my_work__background">
       <div id="my_work">
-        <h1 class="my_work__title">The things I've made</h1>
+<!--         <h1 class="my_work__title">The things I've made</h1> -->
         <div class="my_work__container">
           <div class="my_work__header">
             <p>WEB APPS</p>
           </div>
           <div class="my_work__item">
-            <a href="#home">
-              <%= image_tag "swapp_black.svg", class: "carousel_image" %>
-            </a>
+            <div data-aos="zoom-in">
+              <a href="http://swapp.live">
+                <%= image_tag "swapp_black.svg", class: "carousel_image" %>
+              </a>
+            </div>
           </div>
-          <a href="#home">
+          <a href="https://pupp-app.herokuapp.com/">
             <%= image_tag "pupp_black.svg", class: "carousel_image" %>
           </a>
         </div>
@@ -206,10 +208,10 @@
     </div>
 
     <div id="contact">
-      <h1 class="contact__title">Let's build together.</h1>
+      <h1 class="contact__title">Let's talk.</h1>
       <div class="contact__container">
         <div class="contact__form">
-          <div class="form">
+          <div id="contact_form__remove" class="form">
             <%= form_for @inbound do |c| %>
             <div class="form__content">
               <%= c.label :name, "Name" %>
@@ -219,7 +221,7 @@
               <%= c.label :message, "Message" %>
               <%= c.text_area :message, :class => 'form__message' %>
             </div>
-            <%= c.submit 'Contact Tom', :class => 'btn_transparent_white'%>
+            <%= c.submit 'Contact Tom', :id=>"sweet-alert-demo", :class => 'btn_transparent_white'%>
             <% end %>
           </div>
         </div>

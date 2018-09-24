@@ -3,6 +3,6 @@ class PagesController < ApplicationController
     @inbound = Inbound.new
   end
 
-  def about
+  def resume
   end
 end

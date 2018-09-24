@@ -17,3 +17,6 @@ mwScroller();
 
 import { ctScroller } from '../components/homepage';
 ctScroller();
+
+import { bindSweetAlertButtonDemo } from '../components/sweetalert';
+bindSweetAlertButtonDemo();
