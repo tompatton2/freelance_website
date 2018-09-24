@@ -1,42 +1,43 @@
 
-  <!-- Sidebar Naviagation -->
-  <div class="hidden-xs">
-    <div id="sidebar">
-      <div class="scroll-downs">
-        <div class="mousey">
-          <div class="scroller"></div>
-        </div>
+
+<!-- Sidebar Naviagation -->
+<div class="hidden-xs">
+  <div id="sidebar">
+    <div class="scroll-downs">
+      <div class="mousey">
+        <div class="scroller"></div>
       </div>
-      <ul>
+    </div>
+    <ul>
+      <%= image_tag "tmp_logo_side", class: "sidebar_logo" %>
+      <li id="hme"><a href="#home">Home</a></li>
+      <li id="wia"><a href="#who_i_am">About me</a></li>
+      <li id="wid"><a href="#what_i_do">What I do</a></li>
+      <li id="mw"><a href="#my_work">My work</a></li>
+      <li id="ct"><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- Dropdown appearing on mobile only -->
+<div class="hidden-md hidden-lg hidden-sm">
+  <div class="navbar-wagon">
+    <!-- Logo -->
+      <a href="/" class="navbar-wagon-brand">
         <%= image_tag "tmp_logo_side", class: "sidebar_logo" %>
-        <li id="hme"><a href="#home">Home</a></li>
-        <li id="wia"><a href="#who_i_am">About me</a></li>
-        <li id="wid"><a href="#what_i_do">What I do</a></li>
-        <li id="mw"><a href="#my_work">My work</a></li>
-        <li id="ct"><a href="#contact">Contact</a></li>
+      </a>
+    <div class="dropdown">
+      <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
+      <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+        <li><a href="#mobile_home">Home</a></li>
+        <li><a href="#mobile_who_i_am">About me</a></li>
+        <li><a href="#mobile_what_i_do">What I do</a></li>
+        <li><a href="#mobile_my_work">My work</a></li>
+        <li><a href="#mobile_contact">Contact</a></li>
       </ul>
     </div>
   </div>
-
-  <!-- Dropdown appearing on mobile only -->
-  <div class="hidden-md hidden-lg hidden-sm">
-    <div class="navbar-wagon">
-      <!-- Logo -->
-        <a href="/" class="navbar-wagon-brand">
-          <%= image_tag "tmp_logo_side", class: "sidebar_logo" %>
-        </a>
-      <div class="dropdown">
-        <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
-        <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-          <li><a href="#mobile_home">Home</a></li>
-          <li><a href="#mobile_who_i_am">About me</a></li>
-          <li><a href="#mobile_what_i_do">What I do</a></li>
-          <li><a href="#mobile_my_work">My work</a></li>
-          <li><a href="#mobile_contact">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
+</div>
 
   <!-- Mobile HTML -->
 <div class="hidden-lg hidden-md hidden-sm">
@@ -78,7 +79,7 @@
       <div class="mobile_what_i_do__element">
         <%= image_tag "pencil.svg", class: "mobile_what_i_do__icon" %>
         <p class="mobile_what_i_do__header">DESIGN</p>
-        <p class="mobile_what_i_do__text">I come from a family of architects and artists. Design is my hobby and passion.</p>
+        <p class="mobile_what_i_do__text">I come from a family of architects and artists. Design is my hobby and passion. I build prototypes, powerpoint presentations, and sales one-pagers.</p>
       </div>
       <div class="mobile_what_i_do__element">
         <%= image_tag "html.svg", class: "mobile_what_i_do__icon" %>
@@ -144,7 +145,7 @@
             <p>My name's Tom Patton.</p>
           </div>
           <div class="home__sub">
-            <p>Aspiring Product Manager, web designer, and developer in New York City working with businesses, entrepeneurs and freelancers.</p>
+            <p>Business strategest, web designer, and developer in New York City working with businesses, entrepeneurs and freelancers.</p>
           </div>
           <div class="home__button">
             <a id="cta" class='btn_block_white' href="#contact">SAY HELLO.</a>
@@ -159,7 +160,7 @@
         <p>I’m a business strategy professional turned web designer and developer. I can help you market, design, and launch your freelance website, blog, or startup MVP. </p>
       </div>
       <div class="who_i_am__links">
-        <a class="who_i_am__link"href="#contact">CONTACT</a>
+        <a id="ctl" class="who_i_am__link"href="#contact">CONTACT</a>
         <a class="who_i_am__link"href="https://www.linkedin.com/in/tom-patton">LINKEDIN</a>
         <a class="who_i_am__link" href="https://github.com/tompatton2">GITHUB</a>
         <a class="who_i_am__link"href="/resume">RESUME</a>
@@ -170,19 +171,55 @@
       <h1 class="what_i_do__title">What I can do for you</h1>
       <div class="what_i_do_container">
         <div class="what_i_do__element">
-          <%= image_tag "suitcase.svg", class: "what_i_do__icon" %>
-          <p class="what_i_do__header">BUSINESS</p>
-          <p class="what_i_do__text">My background is in business strategy and management. I've worked with Cisco, Google, and HotelTonight. </p>
+          <div class="what_i_do_top">
+            <%= image_tag "suitcase.svg", class: "what_i_do__icon" %>
+            <p class="what_i_do__header">BUSINESS</p>
+            <p class="what_i_do__text">My background is in business strategy, management, and operations. I have a diverse business skill set and can help you qualify business ideas, size markets, manage projects, create go-to-market stategies, and measure impact.</p>
+          </div>
+          <div class="what_i_do__list">
+            <p class="what_i_do_header what_i_do_header-sub"><strong>DISCIPLINES</strong></p>
+            <ul>
+              <li>RESEARCH</li>
+              <li>POSITIONING</li>
+              <li>MANAGEMENT</li>
+              <li>MARKETING</li>
+              <li>ANALYTICS</li>
+            </ul>
+          </div>
         </div>
         <div class="what_i_do__element">
-          <%= image_tag "pencil.svg", class: "what_i_do__icon" %>
-          <p class="what_i_do__header">DESIGN</p>
-          <p class="what_i_do__text">I come from a family of architects and artists. Design is my hobby and passion.</p>
+          <div class="what_i_do_top">
+            <%= image_tag "pencil.svg", class: "what_i_do__icon" %>
+            <p class="what_i_do__header">DESIGN</p>
+            <p class="what_i_do__text">I come from a family of architects and artists and design has always been my hobby and passion. I can help create product one-pagers, social media content, and product protoypes.  </p>
+          </div>
+          <div class="what_i_do__bottom">
+            <p class="what_i_do_header what_i_do_header-sub"><strong>TOOLS</strong></p>
+            <ul>
+              <li>PEN & PAPER</li>
+              <li>SKETCH - FIGMA</li>
+              <li>INVISION</li>
+              <li>ADOBE SUITE</li>
+              <li>TRELLO - JIRA</li>
+            </ul>
+          </div>
         </div>
         <div class="what_i_do__element">
-          <%= image_tag "html.svg", class: "what_i_do__icon" %>
-          <p class="what_i_do__header">DEVELOPMENT</p>
-          <p class="what_i_do__text">Lorem ipsum dolor sit amet, te velit iriure has. Vix quem feugiat id. At oblique accusata prodesset vis, eam ad latine vivendum.</p>
+          <div class="what_i_do_top">
+            <%= image_tag "html.svg", class: "what_i_do__icon" %>
+            <p class="what_i_do__header">DEVELOPMENT</p>
+            <p class="what_i_do__text">Full-stack web development to help you implement your business website, blog, or startup MVP.</p>
+          </div>
+          <div class="what_i_do__list">
+            <p class="what_i_do_header what_i_do_header-sub"><strong>LANGUAGES</strong></p>
+            <ul>
+              <li>RUBY</li>
+              <li>RUBY ON RAILS</li>
+              <li>JAVASCRIPT</li>
+              <li>HTML & CSS</li>
+              <li>SQL</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -232,7 +269,6 @@
           <a class="contact__link" href="https://github.com/tompatton2">GITHUB</a>
           <a class="contact__link"href="mailto:tom.patton22@gmail.com">EMAIL</a>
           <a class="contact__link" href="/resume">RESUME</a>
-
         </div>
       </div>
     </div>

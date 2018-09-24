@@ -209,7 +209,7 @@
 
 #who_i_am {
   color: $smoke;
-  background-color: $pastel-pink;
+  background-color: $sea;
   font-weight: lighter;
   padding: 5vw;
   min-height: 100vh;
@@ -263,19 +263,30 @@
 
 .what_i_do__title {
   padding-bottom: 3vw;
-  font-size: 6vw;
+  font-size: 4vw;
   margin-bottom: 40px;
 }
 
 .what_i_do__element {
   padding-right: 36px;
   max-width: 23vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  ul,li {
+    padding: 0px !important;
+    font-weight: normal !important;
+    list-style-type: none !important;
+    line-height: 40px;
+    font-size: 1vw;
+  }
 }
 
 .what_i_do__icon {
   margin-bottom: 3vw;
-  height: 3vw;
-  width: 3vw;
+  height: 2vw;
+  width: 2vw;
 }
 
 .what_i_do__header {
@@ -284,7 +295,16 @@
 
 .what_i_do__text {
   line-height: 3.0;
+  font-size: 1vw;
+}
+
+.what_i_do__header-sub {
   font-size: 1.5vw;
+  font-weight: bold;
+}
+
+.what_i_do__bottom {
+  margin-top: 30px;
 }
 
 // My Work
@@ -295,7 +315,7 @@
 .my_work__background {
   background: linear-gradient(
     to right,
-    $sea 50%,
+    $pastel-pink 50%,
     white 50%,
   );
 }
@@ -308,7 +328,7 @@
 
 .my_work__title {
   padding-bottom: 3vw;
-  font-size: 6vw;
+  font-size: 4vw;
   margin-bottom: 40px;
   // max-width: 310px;
 }
@@ -357,7 +377,7 @@
 
 .contact__title {
   padding-bottom: 3vw;
-  font-size: 6vw;
+  font-size: 4vw;
   margin-bottom: 40px;
 }
 
@@ -384,8 +404,10 @@
 }
 
 .contact__link {
-  margin-right: 50px;
+  margin-right: 20px;
+  margin-left: 20px;
   color: $smoke;
+  font-size: 1vw;
 }
 
 .contact__link:hover {

@@ -19,9 +19,9 @@
 }
 
 .btn_block_white{
-  color: $smoke;
+  color: $sea;
   padding: 1.5vw 4vw;
-  background-color: $sea;
+  background-color: $smoke;
   transition: background 0.3s ease;
   font-weight: bold;
   font-size: 1.5vw;
@@ -31,8 +31,8 @@
 
   &:hover {
     opacity: 1;
-    color: $sea;
-    background-color: $smoke;
+    color: $smoke;
+    background-color: $sea;
     // border: solid 1px $sea;
     text-decoration: none;
     border-radius: 50px;
