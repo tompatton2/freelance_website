@@ -1,1 +1,56 @@
-<h1>Hello!</h1>
+
+<!-- Sidebar Naviagation -->
+<div class="hidden-xs">
+  <div id="sidebar">
+    <ul>
+      <%= image_tag "tmp_logo_side", class: "sidebar_logo" %>
+      <li id="hme"><a href="/">Home</a></li>
+      <li id="wia"><a href="/#who_i_am">About me</a></li>
+      <li id="wid"><a href="/#what_i_do">What I do</a></li>
+      <li id="mw"><a href="/#my_work">My work</a></li>
+      <li id="ct"><a href="/#contact">Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- Dropdown appearing on mobile only -->
+<div class="hidden-md hidden-lg hidden-sm">
+  <div class="navbar-wagon">
+    <!-- Logo -->
+      <a href="/" class="navbar-wagon-brand">
+        <%= image_tag "tmp_logo_side", class: "sidebar_logo" %>
+      </a>
+    <div class="dropdown">
+      <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
+      <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+        <li><a href="/#mobile_home">Home</a></li>
+        <li><a href="/#mobile_who_i_am">About me</a></li>
+        <li><a href="/#mobile_what_i_do">What I do</a></li>
+        <li><a href="/#mobile_my_work">My work</a></li>
+        <li><a href="/#mobile_contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<div class="hidden-xs">
+  <div class="page_container">
+    <div class="resume__wrapper">
+      <div class="resume__elements">
+          <%= image_tag "thomas_matthew_patton.svg", class: "resume__page" %>
+          <a id="cta" class='btn_transparent_white' href="../../assets/images/thomas_matthew_patton.svg" download>DOWNLOAD</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="hidden-lg hidden-sm hidden-md">
+  <div class="resume__wrapper">
+    <div class="resume__elements">
+        <%= image_tag "thomas_matthew_patton.svg", class: "resume__page" %>
+        <a id="cta" class='btn_transparent_white' href="../../assets/images/thomas_matthew_patton.svg" download>DOWNLOAD</a>
+    </div>
+  </div>
+</div

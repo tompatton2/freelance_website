@@ -26,7 +26,7 @@
   font-weight: bold;
   font-size: 1.5vw;
   // border: solid 1px $smoke;
-  // border-radius: 10px;
+  border-radius: 50px;
 
 
   &:hover {
@@ -35,5 +35,6 @@
     background-color: $smoke;
     // border: solid 1px $sea;
     text-decoration: none;
+    border-radius: 50px;
   }
 }
