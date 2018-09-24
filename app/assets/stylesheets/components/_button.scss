@@ -19,18 +19,21 @@
 }
 
 .btn_block_white{
-  color: $gunmetal;
-  padding: 2vw 5vw;
-  background-color: $smoke;
+  color: $smoke;
+  padding: 1.5vw 4vw;
+  background-color: $sea;
   transition: background 0.3s ease;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1.5vw;
+  // border: solid 1px $smoke;
+  // border-radius: 10px;
 
 
   &:hover {
     opacity: 1;
-    color: $smoke;
-    background-color: $sea;
+    color: $sea;
+    background-color: $smoke;
+    // border: solid 1px $sea;
     text-decoration: none;
   }
 }

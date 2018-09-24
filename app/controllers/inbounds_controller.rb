@@ -9,3 +9,4 @@ class InboundsController < ApplicationController
     params.require(:inbound).permit(:name, :email, :message)
   end
 end
+
