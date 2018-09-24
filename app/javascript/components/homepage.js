@@ -46,6 +46,13 @@ function ctScroller() {
   });
 }
 
+function ctScroller() {
+  $("#ctl").click(function() {
+      $([document.documentElement, document.body]).animate({
+          scrollTop: $("#contact").offset().top
+      }, 2000);
+  });
+}
 
 
 export { ctaScroller };
@@ -55,4 +62,5 @@ export { widScroller };
 export { mwScroller };
 export { ctScroller };
 export { formScroller };
+export { ctlScoller };
 
