@@ -20,3 +20,6 @@ ctScroller();
 
 import { bindSweetAlertButtonDemo } from '../components/sweetalert';
 bindSweetAlertButtonDemo();
+
+import { bindSweetAlertButtonDemoMobile } from '../components/sweetalert';
+bindSweetAlertButtonDemoMobile();

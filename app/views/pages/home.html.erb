@@ -64,7 +64,7 @@
       <a class="mobile_who_i_am__link"href="#contact">CONTACT</a>
       <a class="mobile_who_i_am__link"href="https://www.linkedin.com/in/tom-patton">LINKEDIN</a>
       <a class="mobile_who_i_am__link" href="https://github.com/tompatton2">GITHUB</a>
-      <!-- <a class="who_i_am__link"href="">SKETCH</a> -->
+      <a class="who_i_am__link"href="/resume">RESUME</a>
     </div>
   </div>
 
@@ -72,43 +72,85 @@
     <h1 class="mobile_what_i_do__title">What I do</h1>
     <div class="mobile_what_i_do_container">
       <div class="mobile_what_i_do__element">
-        <%= image_tag "suitcase.svg", class: "mobile_what_i_do__icon" %>
-        <p class="mobile_what_i_do__header">BUSINESS</p>
-        <p class="mobile_what_i_do__text">My background is in business strategy and management. I've worked with Cisco, Google, and HotelTonight. </p>
+        <div class="what_i_do_top">
+            <%= image_tag "suitcase.svg", class: "mobile_what_i_do__icon" %>
+            <p class="mobile_what_i_do__header">BUSINESS</p>
+            <p class="mobile_what_i_do__text">My background is in business strategy, management, and operations. I have a diverse business skill set and can help you qualify business ideas, size markets, manage projects, create go-to-market stategies, and measure impact.</p>
+        </div>
+        <div class="what_i_do__bottom">
+          <p class="what_i_do_header what_i_do_header-sub"><strong>DISCIPLINES</strong></p>
+          <ul>
+            <li>RESEARCH</li>
+            <li>POSITIONING</li>
+            <li>MANAGEMENT</li>
+            <li>MARKETING</li>
+            <li>ANALYTICS</li>
+          </ul>
+        </div>
       </div>
       <div class="mobile_what_i_do__element">
-        <%= image_tag "pencil.svg", class: "mobile_what_i_do__icon" %>
-        <p class="mobile_what_i_do__header">DESIGN</p>
-        <p class="mobile_what_i_do__text">I come from a family of architects and artists. Design is my hobby and passion. I build prototypes, powerpoint presentations, and sales one-pagers.</p>
+        <div class="what_i_do_top">
+          <%= image_tag "pencil.svg", class: "mobile_what_i_do__icon" %>
+          <p class="mobile_what_i_do__header">DESIGN</p>
+          <p class="mobile_what_i_do__text">I come from a family of architects and artists and design has always been my hobby and passion. I can help create product one-pagers, social media content, and product protoypes.I come from a family of architects and artists. Design is my hobby and passion. I build prototypes, powerpoint presentations, and sales one-pagers.</p>
+        </div>
+        <div class="what_i_do__bottom">
+          <p class="what_i_do_header what_i_do_header-sub"><strong>TOOLS</strong></p>
+          <ul>
+            <li>PEN & PAPER</li>
+            <li>SKETCH - FIGMA</li>
+            <li>INVISION</li>
+            <li>ADOBE SUITE</li>
+            <li>TRELLO - JIRA</li>
+          </ul>
+        </div>
       </div>
       <div class="mobile_what_i_do__element">
-        <%= image_tag "html.svg", class: "mobile_what_i_do__icon" %>
-        <p class="mobile_what_i_do__header">DEVELOPMENT</p>
-        <p class="mobile_what_i_do__text">Lorem ipsum dolor sit amet, te velit iriure has. Vix quem feugiat id. At oblique accusata prodesset vis, eam ad latine vivendum.</p>
+        <div class="what_i_do_top">
+          <%= image_tag "html.svg", class: "mobile_what_i_do__icon" %>
+          <p class="mobile_what_i_do__header">DEVELOPMENT</p>
+          <p class="mobile_what_i_do__text">Full-stack web development to help you implement your business website, blog, or startup MVP.</p>
+        </div>
+        <div class="what_i_do__bottom">
+          <p class="what_i_do_header what_i_do_header-sub"><strong>LANGUAGES</strong></p>
+          <ul>
+            <li>RUBY</li>
+            <li>RUBY ON RAILS</li>
+            <li>JAVASCRIPT</li>
+            <li>HTML & CSS</li>
+            <li>SQL</li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
   <div class="my_work__background">
     <div id="mobile_my_work">
-      <h1 class="my_work__title">The things I've made</h1>
-      <div class="my_work__container">
-        <div class="my_work__header">
+      <h1 class="mobile_my_work__title">The things I've made</h1>
+      <div class="mobile_my_work__container">
+        <div class="mobile_my_work__header">
           <p>WEB APPS</p>
         </div>
-        <div class="my_work__item">
-          <a href="#home">
-            <%= image_tag "swapp_black.svg", class: "carousel_image" %>
-          </a>
+        <div class="mobile_my_work__item">
+          <div data-aos="zoom-in-up">
+            <a href="http://swapp.live">
+              <%= image_tag "swapp_black.svg", class: "mobile_carousel_image" %>
+            </a>
+          </div>
         </div>
-        <a href="#home">
-          <%= image_tag "pupp_black.svg", class: "carousel_image" %>
-        </a>
+        <div class="mobile_my_work__item">
+          <div data-aos="zoom-in-up">
+            <a href="https://pupp-app.herokuapp.com/">
+              <%= image_tag "pupp_black.svg", class: "mobile_carousel_image mobile_carousel_image-computer" %>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
   <div id="mobile_contact">
-    <h1 class="contact__title">Let's build together.</h1>
+    <h1 class="mobile_contact__title">Let's build together.</h1>
     <div class="contact__container">
       <div class="contact__form">
         <div class="form">
@@ -121,19 +163,19 @@
             <%= c.label :message, "Message" %>
             <%= c.text_field :message, :class => 'form__message' %>
           </div>
-          <%= c.submit 'Contact Tom', :class => 'btn_transparent_white'%>
+          <%= c.submit 'Contact Tom', :id=>"sweet-alert-demo-mobile", :class => 'btn_transparent_white'%>
           <% end %>
         </div>
       </div>
       <div class="contact__links">
-        <a class="contact__link"href="https://www.linkedin.com/in/tom-patton">LINKEDIN</a>
-        <a class="contact__link" href="https://github.com/tompatton2">GITHUB</a>
-        <!-- <a class="contact__link"href="">SKETCH</a> -->
+        <a class="mobile_contact__link"href="https://www.linkedin.com/in/tom-patton">LINKEDIN</a>
+        <a class="mobile_contact__link" href="https://github.com/tompatton2">GITHUB</a>
+        <a class="mobile_contact__link"href="mailto:tom.patton22@gmail.com">EMAIL</a>
+        <a class="mobile_contact__link"href="/resume">RESUME</a>
       </div>
     </div>
   </div>
 </div>
-
 
   <!-- Desktop HTML -->
 <div class="hidden-xs">
@@ -176,7 +218,7 @@
             <p class="what_i_do__header">BUSINESS</p>
             <p class="what_i_do__text">My background is in business strategy, management, and operations. I have a diverse business skill set and can help you qualify business ideas, size markets, manage projects, create go-to-market stategies, and measure impact.</p>
           </div>
-          <div class="what_i_do__list">
+          <div class="what_i_do__bottom">
             <p class="what_i_do_header what_i_do_header-sub"><strong>DISCIPLINES</strong></p>
             <ul>
               <li>RESEARCH</li>
@@ -191,7 +233,7 @@
           <div class="what_i_do_top">
             <%= image_tag "pencil.svg", class: "what_i_do__icon" %>
             <p class="what_i_do__header">DESIGN</p>
-            <p class="what_i_do__text">I come from a family of architects and artists and design has always been my hobby and passion. I can help create product one-pagers, social media content, and product protoypes.  </p>
+            <p class="what_i_do__text">I come from a family of architects and artists and design has always been my hobby and passion. I can help create product one-pagers, social media content, and product protoypes.</p>
           </div>
           <div class="what_i_do__bottom">
             <p class="what_i_do_header what_i_do_header-sub"><strong>TOOLS</strong></p>
@@ -210,7 +252,7 @@
             <p class="what_i_do__header">DEVELOPMENT</p>
             <p class="what_i_do__text">Full-stack web development to help you implement your business website, blog, or startup MVP.</p>
           </div>
-          <div class="what_i_do__list">
+          <div class="what_i_do__bottom">
             <p class="what_i_do_header what_i_do_header-sub"><strong>LANGUAGES</strong></p>
             <ul>
               <li>RUBY</li>
