@@ -104,15 +104,24 @@
 }
 
 .mobile_what_i_do__element {
-  padding-right: 36px;
+  // padding-right: 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  ul,li {
+    padding: 0px !important;
+    font-weight: normal !important;
+    list-style-type: none !important;
+    line-height: 40px;
+    font-size: 12px;
+  }
 }
 
 .mobile_what_i_do__icon {
   margin-bottom: 20px;
   margin-top: 30px;
   height:20px;
-
-
 }
 
 .mobile_what_i_do__header {
@@ -129,11 +138,53 @@
 
 #mobile_my_work {
   padding: 5.5vw;
-  min-height: 80vh;
-  background-color: $pastel-pink;
-  font-color: $gunmetal;
+  min-height: 100vh;
+  background-color: white;
+  font-color: $pastel-pink;
 }
 
+.mobile_my_work__title {
+  font-size: 40px;
+    h1 {
+      margin: 0px !important;
+    }
+}
+
+.mobile_my_work__container {
+  font-weight: lighter;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mobile_my_work__header {
+  background-color: $gunmetal;
+  color: white;
+  padding: 15px 40px;
+  margin: 20px 0px;
+  border-radius: 50px;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+    p {
+      margin-bottom: 0px;
+    }
+}
+
+.mobile_my_work__item {
+  padding: 5px 0px;
+  max-width: 60vw;
+}
+
+.mobile_carousel_image {
+  padding: 20px 0px;
+  max-width: 40vw;
+}
+
+.mobile_carousel_image-computer {
+  padding: 20px 0px;
+  max-width: 60vw;
+}
 // Mobile Contact
 
 #mobile_contact {
@@ -141,6 +192,20 @@
   min-height: 105vh;
   color: $smoke;
   background-color: $gunmetal;
+}
+
+.mobile_contact__title {
+  font-size: 40px;
+    h1 {
+      margin: 0px !important;
+    }
+}
+
+.mobile_contact__link {
+  margin-right: 5px;
+  margin-left: 5px;
+  color: $smoke;
+  font-size: 8px;
 }
 
 
@@ -273,6 +338,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: left;
 
   ul,li {
     padding: 0px !important;
@@ -290,7 +356,7 @@
 }
 
 .what_i_do__header {
-  font-size: 3vw;
+  font-size: 2vw;
 }
 
 .what_i_do__text {
@@ -304,7 +370,7 @@
 }
 
 .what_i_do__bottom {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 // My Work
