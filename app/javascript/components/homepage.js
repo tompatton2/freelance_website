@@ -41,18 +41,11 @@ function mwScroller() {
 function ctsbScroller() {
   $("#ctsb").click(function() {
       $([document.documentElement, document.body]).animate({
-          scrollTop: $("#contact").offset().top
+          scrollTop: $("#contact_form__remove").offset().top
       }, 2000);
   });
 }
 
-function ctlScroller() {
-  $("#ctl").click(function() {
-      $([document.documentElement, document.body]).animate({
-          scrollTop: $("#contact").offset().top
-      }, 2000);
-  });
-}
 
 
 export { ctaScroller };
@@ -61,6 +54,5 @@ export { wiaScroller };
 export { widScroller };
 export { mwScroller };
 export { ctsbScroller };
-export { ctlScoller };
 export { formScroller };
 

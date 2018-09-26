@@ -18,9 +18,6 @@ mwScroller();
 import { ctsbScroller } from '../components/homepage';
 ctsbScroller();
 
-import { ctlScroller } from '../components/homepage';
-ctlScroller();
-
 
 
 import { bindSweetAlertButtonDemo } from '../components/sweetalert';
