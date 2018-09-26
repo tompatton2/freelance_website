@@ -15,8 +15,10 @@ widScroller();
 import { mwScroller } from '../components/homepage';
 mwScroller();
 
-import { ctScroller } from '../components/homepage';
-ctScroller();
+import { ctsbScroller } from '../components/homepage';
+ctsbScroller();
+
+
 
 import { bindSweetAlertButtonDemo } from '../components/sweetalert';
 bindSweetAlertButtonDemo();
