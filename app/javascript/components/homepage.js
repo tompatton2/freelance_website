@@ -38,15 +38,15 @@ function mwScroller() {
   });
 }
 
-function ctScroller() {
-  $("#ct").click(function() {
+function ctsbScroller() {
+  $("#ctsb").click(function() {
       $([document.documentElement, document.body]).animate({
           scrollTop: $("#contact").offset().top
       }, 2000);
   });
 }
 
-function ctScroller() {
+function ctlScroller() {
   $("#ctl").click(function() {
       $([document.documentElement, document.body]).animate({
           scrollTop: $("#contact").offset().top
@@ -60,7 +60,7 @@ export { hmeScroller };
 export { wiaScroller };
 export { widScroller };
 export { mwScroller };
-export { ctScroller };
-export { formScroller };
+export { ctsbScroller };
 export { ctlScoller };
+export { formScroller };
 

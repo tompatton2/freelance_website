@@ -14,7 +14,7 @@
       <li id="wia"><a href="#who_i_am">About me</a></li>
       <li id="wid"><a href="#what_i_do">What I do</a></li>
       <li id="mw"><a href="#my_work">My work</a></li>
-      <li id="ct"><a href="#contact">Contact</a></li>
+      <li id="ctsb"><a href="#contact">Contact</a></li>
     </ul>
   </div>
 </div>
@@ -45,10 +45,10 @@
     <div id="mobile_home">
       <div class="mobile_home__text">
         <div class="mobile_home__name">
-          <p>I'm Tom Patton.</p>
+          <p>My name's Tom Patton.</p>
         </div>
         <div class="mobile_home__sub">
-          <p>Business strategist, web designer, and developer in New York City working with businesses, entrepeneurs, and freelancers.</p>
+          <p>Product focused business leader, web designer, and developer in New York City working with businesses, entrepeneurs, and freelancers.</p>
         </div>
         <a class='btn_block_white' href="#mobile_contact">SAY HELLO!</a>
       </div>
@@ -71,7 +71,7 @@
   <div id="mobile_what_i_do">
     <h1 class="mobile_what_i_do__title">What I can do for you</h1>
     <div class="mobile_what_i_do_container">
-      <div class="mobile_what_i_do__element">
+      <div class="mobile_what_i_do__element" data-aos="zoom-in">
         <div class="what_i_do_top">
             <%= image_tag "suitcase.svg", class: "mobile_what_i_do__icon" %>
             <p class="mobile_what_i_do__header">BUSINESS</p>
@@ -88,7 +88,7 @@
           </ul>
         </div>
       </div>
-      <div class="mobile_what_i_do__element">
+      <div class="mobile_what_i_do__element" data-aos="zoom-in">
         <div class="what_i_do_top">
           <%= image_tag "pencil.svg", class: "mobile_what_i_do__icon" %>
           <p class="mobile_what_i_do__header">DESIGN</p>
@@ -105,7 +105,7 @@
           </ul>
         </div>
       </div>
-      <div class="mobile_what_i_do__element">
+      <div class="mobile_what_i_do__element" data-aos="zoom-in">
         <div class="what_i_do_top">
           <%= image_tag "html.svg", class: "mobile_what_i_do__icon" %>
           <p class="mobile_what_i_do__header">DEVELOPMENT</p>
@@ -157,11 +157,11 @@
           <%= form_for @inbound do |c| %>
           <div class="form__content">
             <%= c.label :name, "Name" %>
-            <%= c.text_field :name %>
+            <%= c.text_field :name, placeholder: "John Doe"  %>
             <%= c.label :email, "Email" %>
-            <%= c.text_field :email %>
+            <%= c.text_field :email, placeholder: "john.doe@lewagon.com" %>
             <%= c.label :message, "Message" %>
-            <%= c.text_field :message, :class => 'form__message' %>
+            <%= c.text_area :message, :class => 'form__message', placeholder: "Hi there, I'd like to connect with you about building an MVP!" %>
           </div>
           <%= c.submit 'Contact Tom', :id=>"sweet-alert-demo-mobile", :class => 'btn_transparent_white'%>
           <% end %>
@@ -187,7 +187,7 @@
             <p>My name's Tom Patton.</p>
           </div>
           <div class="home__sub">
-            <p>Business strategist, web designer, and developer in New York City working with businesses, entrepeneurs, and freelancers.</p>
+            <p>Product focused business leader, web designer, and developer in New York City working with businesses, entrepeneurs, and freelancers.</p>
           </div>
           <div class="home__button">
             <a id="cta" class='btn_block_white' href="#contact">SAY HELLO.</a>
@@ -296,11 +296,11 @@
             <%= form_for @inbound do |c| %>
             <div class="form__content">
               <%= c.label :name, "Name" %>
-              <%= c.text_field :name %>
+              <%= c.text_field :name, placeholder: "John Doe"  %>
               <%= c.label :email, "Email" %>
-              <%= c.text_field :email %>
+              <%= c.text_field :email, placeholder: "john.doe@lewagon.com" %>
               <%= c.label :message, "Message" %>
-              <%= c.text_area :message, :class => 'form__message' %>
+              <%= c.text_area :message, :class => 'form__message', placeholder: "Hi there, I'd like to connect with you about building an MVP!" %>
             </div>
             <%= c.submit 'Contact Tom', :id=>"sweet-alert-demo", :class => 'btn_transparent_white'%>
             <% end %>
