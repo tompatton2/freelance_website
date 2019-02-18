@@ -295,11 +295,11 @@
             <%= form_for @inbound do |c| %>
             <div class="form__content">
               <%= c.label :name, "Name" %>
-              <%= c.text_field :name, placeholder: "John Doe"  %>
+              <%= c.text_field :name %>
               <%= c.label :email, "Email" %>
-              <%= c.text_field :email, placeholder: "john.doe@lewagon.com" %>
+              <%= c.text_field :email %>
               <%= c.label :message, "Message" %>
-              <%= c.text_area :message, :class => 'form__message', placeholder: "Hi there, I'd like to connect with you about building an MVP!" %>
+              <%= c.text_area :message, :class => 'form__message' %>
             </div>
             <%= c.submit 'Contact Tom', :class => 'btn_transparent_white'%>
             <% end %>
