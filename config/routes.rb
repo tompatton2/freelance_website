@@ -3,5 +3,6 @@ Rails.application.routes.draw do
   get 'portfolio', to: 'pages#portfolio', as: 'portfolio'
   get 'swapp', to: 'pages#swapp', as: 'swapp'
   get 'resume', to: 'pages#resume', as: 'resume'
+  get "pages/download_pdf"
   resources :inbounds
 end
