@@ -268,20 +268,10 @@
     </div>
 
     <div id="contact">
-    <%= render 'shared/flashes' %>
       <h1 class="contact__title">Let's talk.</h1>
+      <%= render 'shared/flashes' %>
       <div class="contact__container">
         <div class="contact__form">
-          <div>
-            <% if @inbound.errors.any? %>
-              <h3>
-                Please correct the following <%= pluralize(@inbound.errors.count, 'error')  %>
-              </h3>
-              <ul><% @inbound.errors.full_messages.each do |message| %></ul>
-                <li><%= message %></li>
-              <% end %>
-            <% end %>
-          </div>
           <div id="contact_form__remove" class="form">
             <%= form_for @inbound do |c| %>
             <div class="form__content">
