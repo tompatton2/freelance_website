@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  get 'black_and_white/landing'
   root to: 'pages#home'
 
   get 'home', to: 'pages#home', as: 'home'
