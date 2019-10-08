@@ -7,5 +7,7 @@ Rails.application.routes.draw do
 
   get 'black_and_white_landing', to: 'black_and_white#landing'
 
+  get 'ce_soir_landing', to: 'ce_soir#landing'
+
   resources :inbounds, only: [:create, :new]
 end
