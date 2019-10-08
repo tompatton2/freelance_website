@@ -46,6 +46,18 @@
     }
 }
 
+.mobile_home_scroller {
+  height: 85px;
+  width: 85px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;
+  box-shadow: 0 2px 14px rgba(126,87,88,0.1);
+}
+
 // WHO I AM
 
 #mobile_who_i_am {
@@ -264,6 +276,7 @@
 
 .home__button {
   margin-top: 50px;
+  box-shadow: 0 2px 14px rgba(126,87,88,0.1);
 }
 
  // WHO I AM
